@@ -371,7 +371,7 @@ header{
     background-attachment: fixed;
     position: relative;
     width: 100%;
-    height: 325vh;
+    height: 270vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -988,9 +988,7 @@ footer{
     background-color: rgba(0, 0, 0, 0.829);
 } 
 #lesson-html{
-    /* width: 100%;
-    height: auto;
-    margin: 6% 0; */
+   
 }
 #lesson-html .volume{
    background-color: transparent;
@@ -1129,64 +1127,7 @@ footer{
 
 }
 
-/*
 
-
-#video-container{
-    position: absolute;
-    z-index: 1;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    top: 50%;
-    left: 0;
-    width: 100%;
-    height: auto;
-    margin-top: 10%;
-}
-.video-card{
-    width: 100%;
-    padding: 1%;
-    margin: 4% 0;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    
-    
-}
-.video-content{
-
-  display: flex;
-  justify-content: space-between;
-  gap: 15px;
-  z-index: -1;
-
-
-}
-.video-content img{
-   
-}
-.video-content img:hover{
-    opacity: 0.9;
-}
-.video-text h5{
-    font-size: var(--font-24-h5);
-    font-weight: 400;
-    color: var(---yellow-color);
-    margin-bottom: 20px;
-    width: 90%;
-}
-.video-text p{
-    font-size: var(--font-14);
-    font-weight: 600;
-    color: var(---white-grey-color);
-    line-height: 25px;
-    width: 90%;
-}
-
-.video-text{
-    width: 100%;
-
-}
 /* ================================ show HTML ================================  */
 
 #events-section{
@@ -1280,6 +1221,12 @@ footer{
     padding: 60px;
     margin: 3%;
 }
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
+}
 .manager-contact:hover{
     transform: scale(1.01);
 }
@@ -1362,17 +1309,17 @@ form a{
     padding: 10px 15px;
     border: 1px solid var(---yellow-color);
     cursor: pointer;
-    width: 30%;
+    max-width: 40%;
     text-align: center;
 }
-#tab-cord img{
+.volume img{
     position: absolute;
     z-index: 1;
     max-width: 170px;
     max-height: 400px;
     object-fit: cover;
-    top: 70%;
-    left: 45%;
+    top: 80%;
+    left: 48%;
     margin:  0 auto;
     transform: translate(-50%, -50%);
 }

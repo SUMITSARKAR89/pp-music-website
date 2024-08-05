@@ -26,65 +26,87 @@
 </head>
 <body style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.932),rgb(0, 0, 0));">
     <!-- =============================== header section start here================  -->
-   <header>
-    <div class="head ">
-        <div class="logo">
-            <a href="index.html"><img src="img/PP-MUSIC.png" alt=""></a>
+    <header>
+        <div class="head ">
+            <div class="logo">
+                <a href="index.html"><img src="img/PP-MUSIC.png" alt=""></a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html" >home</a></li>
+                    <li><a href="about.html" >about</a></li>
+                    <li><a href="lesson.html">lessons</a></li>
+                    <li><a href="shows.html">shows</a></li>
+                    <li><a href="contact.html" id="active">contact</a></li>
+                </ul>
+            </div>
+            <div class="menu-icon" id="menu-icon">
+                <a href="#" class="open"><i class="ri-more-2-fill"></i></a>
+                <a href="#" class="close"><i class="ri-close-line"></i></a>
+            </div> 
+    
         </div>
-        <div class="nav">
+        <div class="mobile-nav" id="nav">
+            <img src="img/PP-MUSIC.png" alt="" width="100">
             <ul>
+                
                 <li><a href="index.html" >home</a></li>
-                <li><a href="about.html" >about</a></li>
-                <li><a href="lesson.html" >lessons</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="lesson.html">lessons</a></li>
                 <li><a href="shows.html">shows</a></li>
-                <li><a href="contact.html" id="active">contact</a></li>
+                <li><a href="contact.html">contact</a></li>
+                
             </ul>
+            <div class="mobile-nav-social">
+                <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                <a href="#"><i class="ri-instagram-fill"></i></a>
+                <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+                <a href="#"><i class="ri-youtube-fill"></i></a>
+            </div>
         </div>
-        <div class="menu-icon">
-            <i class="ri-more-2-fill"></i>
-        </div>
-
-    </div>
-    <section id="about-Html">
-        <div class="bg-color "></div>  
-        
-        <div class="content ">
-           <h2>Guitar Lessons</h2>
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        
-       
-    </section>
-   </header>
+        <section id="about-Html">
+            <div class="bg-color "></div>  
+            
+            <div class="content ">
+               <h2>Get In Touch</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            
+           
+        </section>
+    </header>
 
    <!-- =============================== main section start here================  -->
    <main>
 
     <!-- ------------------tabs and cord section----------------------  -->
-    <section id="tab-cord" style="height: 140vh;">
+    <section id="lesson-html" style="height: 130vh;">
         
-            <div class="contact-container container">
-                <div class="contact-card">
-                    <div class="manager-contact">
-                        <h5>Manager Contact</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, eligendi perspiciatis fuga ut ipsa eaque aut architecto, voluptate nobis porro ab, esse beatae distinctio. </p>
-                        <div class="contact-cotent">
-                            <li><i class="ri-phone-fill"></i><p>+123 456 7890</p></li>
-                            <li><i class="ri-mail-fill"></i><p>sumitsarkar@gmail.com</p></li>
-                            <li><i class="ri-home-fill"></i><p>2663 Lodgeville Road Minneapolis,</p></li>
+            <section class="volume">
+                <div class="contact-container container">
+                    <div class="contact-card">
+                        <div class="manager-contact">
+                            <h5>Manager Contact</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, eligendi perspiciatis fuga ut ipsa eaque aut architecto, voluptate nobis porro ab, esse beatae distinctio. </p>
+                            <div class="contact-cotent">
+                                <li><i class="ri-phone-fill"></i><p>+123 456 7890</p></li>
+                                <li><i class="ri-mail-fill"></i><p>sumitsarkar@gmail.com</p></li>
+                                <li><i class="ri-home-fill"></i><p>2663 Lodgeville Road Minneapolis,</p></li>
+                            </div>
                         </div>
                     </div>
+                    <div class="contact-card">
+                        <form action="#">
+                            <input type="name" name="name" id="name" placeholder="enter your name">
+                            <input type="email" name="email" id="email" placeholder="enter your email address">
+                            <textarea name="message" id="massage" placeholder="write your message......" cols="50" rows="10"></textarea>
+                            <a href="#" class="btn">send message</a>
+                        </form>
+                    </div>
                 </div>
-                <div class="contact-card">
-                    <form action="#">
-                        <input type="name" name="name" id="name" placeholder="enter your name">
-                        <input type="email" name="email" id="email" placeholder="enter your email address">
-                        <textarea name="message" id="massage" placeholder="write your message......" cols="50" rows="10"></textarea>
-                        <a href="#" class="btn">send message</a>
-                    </form>
-                </div>
-            </div>
-            <img src="img/electric-strat-min-361x1024.png" alt="">
+                <img src="img/electric-strat-min-361x1024.png" alt="">
+
+            </section>
         
 
     </section>
