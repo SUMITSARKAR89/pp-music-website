@@ -81,6 +81,62 @@ body{
 section{
     
 }
+
+
+.mobile-nav img{
+    margin:10% 15%;
+}
+.mobile-nav ul{
+    padding: 35px;
+    margin: 5%;
+}
+.mobile-nav li {
+    margin: 8% 0;
+}
+.mobile-nav li a{
+    text-transform: capitalize;
+    font-size: var(--font-20);
+    color: var(---yellow-color);
+    font-weight: 500;
+}
+.mobile-nav li a:hover{
+    color: var(---white-color);
+}
+.mobile-nav-social{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 35px;
+    margin: 5%;
+    gap: 5px;
+    
+}
+.mobile-nav-social a{
+    padding: 5px;
+    margin: 3%;
+    font-size: 20px;
+    background-color: var(---yellow-color);
+    border-radius: 100%;
+}
+.mobile-nav-social a:hover{
+    background-color: #D0D0D0;
+}
+.mobile-nav-social i{
+    color: var(---black-color);
+}
+
+.menu-icon i{
+    color: var(---yellow-color);
+    background-color: #131313;
+    font-size: var(--font-36-h4);
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+
+
 /* ======================= main section ==========================  */
 header{
     width: 100%;
@@ -151,11 +207,11 @@ header{
     background-position: center top;
     
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-attachment: scroll;
     position: relative;
     width: 100%;
-    height: 120vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -255,10 +311,14 @@ header{
     align-items: center;
 }
 .social a{
-    padding: 6px;
-    border-radius: 100%;
-    background-color: var(---yellow-color);
-    color: #000000;
+   color: var(---black-color);
+   background-color:var(---yellow-color);
+   padding: 2px 5px;
+   border-radius: 50%;
+   font-size: 22px;
+   margin: 1%;
+   display: block;
+   
 }
 .social a:hover{
     background-color: #000000;
@@ -904,7 +964,7 @@ footer{
 }
 /* ==================================lesson HTML==========================  */
 
-#tab-cord{
+#lesson-html{
     background-image: url(img/stay-in-touch.jpg);
     background-position: center ;
     
@@ -915,9 +975,10 @@ footer{
     width: 100%;
     height: 250vh;
     margin:3% 0;
+    z-index: 2;
    
 }
-#tab-cord::after{
+#lesson-html::after{
     content: '';
     position: absolute;
     width: 100%;
@@ -926,77 +987,150 @@ footer{
     left: 0;
     background-color: rgba(0, 0, 0, 0.829);
 } 
-
-.volume-container{
+#lesson-html{
+    /* width: 100%;
+    height: auto;
+    margin: 6% 0; */
+}
+#lesson-html .volume{
+   background-color: transparent;
+    padding: 2%;
+    position: absolute;
+    z-index: 1;
+    
+}
+.volume .vol-container{
+    width: 100%;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
+    text-align: center;
+    gap: 15px;
+    
+}
+.vol-container .vol-card{
+    position: relative;
     width: 100%;
-    height: auto;
-    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.vol-content{
     text-align: center;
 }
-
-.contact-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
+.vol-content img{
     width: 100%;
-    height: auto;
-    margin-top: 10%;
-   
-}
-
-.volume-card{
-    width: 100%;
-    padding: 2%;
-    position: relative;
-    text-align: center;
-}
-.volume-card img{
-    width: 100%;
-    height: auto;
-    position: relative;
-    border-radius: 8px;
+    padding: 1%;
+    border-radius: 10px;
     opacity: 0.9;
 }
-.volume-card img:hover{
-    opacity: 1;
-    transform: scale(1.02);
+.vol-content img:hover{
+    opacity: 0.8;
+
 }
-.volume-card .tabs-content{
+.vol-content a{
+    color: var(---yellow-color);
+    text-transform: uppercase;
+    border: 1px solid var(---yellow-color);
+    padding: 10px 15px;
+    max-width: 50%;
+    margin:  0 auto;
+    margin-top: 10%;
+    display: block;
+}
+.vol-text{
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 100%;
-    margin: 0 a;
     transform: translate(-50%, -50%);
+    width: 90%;
+    
 }
-.tabs-content h4{
-
+.vol-text h4{
     font-size: var(--font-36-h4);
-    color: var(---yellow-color);
     font-weight: 300;
-    max-width: 250px;
-    margin: 0 auto;
+    text-transform: capitalize;
+    color: var(---yellow-color);
+    
 }
-.volume-card a{
+
+.vedio{
+    width: 100%;
+    height: auto;
+    margin: 10% 0;
+    
+}
+.video-content img{
+    width: 140px;
+    height: auto;
+    padding: 1%;
+    object-fit: cover;
+    opacity: 1;
+
+}
+.video-content img:hover{
+    opacity: 0.8;
+}
+#video-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 2%;
+}
+.video-card{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.video-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+
+}
+.video-card a{
     display: block;
-    max-width: 100%;
-    margin:  0 auto;
-   
+    color: var(---white-color);
+    font-size: var(--font-15);
+    text-transform: capitalize;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: -2%;
+
 }
-.volume-card .btn{
-    margin-top: 4%;
+.video-card a i{
+    font-size: var(--font-20);
+    padding-top: 5px;
+    margin-right: 2px;
+    display: inline-block;
 }
+.video-card a:hover{
+    color: var(---yellow-color);
+}
+.video-text h5{
+    font-size: var(--font-24-h5);
+    font-weight: 400;
+    color: var(---yellow-color);
+    margin-bottom: 20px;
+    width: 100%;
+}
+.video-text p{
+    font-size: var(--font-14);
+    font-weight: 600;
+    color: var(---white-grey-color);
+    line-height: 25px;
+    width: 100%;
+}
+
+.video-text{
+    width: 100%;
+
+}
+
+/*
+
 
 #video-container{
     position: absolute;
@@ -1020,18 +1154,16 @@ footer{
     
 }
 .video-content{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-    gap: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  z-index: -1;
+
 
 }
 .video-content img{
-    width: 120px;
-    object-fit: cover;
-    opacity: 1;
+   
 }
 .video-content img:hover{
     opacity: 0.9;
@@ -1050,25 +1182,7 @@ footer{
     line-height: 25px;
     width: 90%;
 }
-.video-card a{
-    display: block;
-    color: var(---white-color);
-    font-size: var(--font-15);
-    text-transform: capitalize;
-    cursor: pointer;
-    font-weight: 600;
-    margin-top: -2%;
 
-}
-.video-card a i{
-    font-size: var(--font-20);
-    padding-top: 5px;
-    margin-right: 2px;
-    display: inline-block;
-}
-.video-card a:hover{
-    color: var(---yellow-color);
-}
 .video-text{
     width: 100%;
 
