@@ -24,7 +24,7 @@
 <br/>
    https://github.com/SUMITSARKAR89/language-tutor-website/tree/master
     <br/>
-Demo :https://66ac981a65041dfe39dcd036--thriving-monstera-e3601c.netlify.app/
+Demo https://master--earnest-squirrel-22469f.netlify.app/
     
    ### __"There is no friend as loyal as a book"__ 
 
